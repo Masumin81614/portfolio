@@ -1,0 +1,12 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as mixin;
+
+#p-loading__container {
+  background: global.$bg-color;
+}
+
+.c-header__logo {
+  img {
+    width: 200px;
+  }
+}

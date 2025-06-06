@@ -1,0 +1,90 @@
+body {
+	font-family: "Noto Sans JP", "Montserrat", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: normal;
+}
+
+#c-loading__title {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+#c-loading__subtitle {
+	font-size: 1em;
+	margin-bottom: 2em;
+}
+
+.c-dot {
+	animation: pulse 1.2s ease-in-out infinite;
+	background-color: #ed1e79; /* 点の色に合わせて調整 */
+	border-radius: 50%;
+	height: 1em;
+	opacity: 0.5;
+	width: 1em;
+}
+
+.dot:nth-child(2) {
+	animation-delay: 0.2s;
+	background-color: #f14b94;
+}
+
+.dot:nth-child(3) {
+	animation-delay: 0.4s;
+	background-color: #f478af;
+}
+
+.dot:nth-child(4) {
+	animation-delay: 0.6s;
+	background-color: #f8a5c9;
+}
+
+.dot:nth-child(5) {
+	animation-delay: 0.8s;
+	background-color: #fbd2e4;
+}
+
+.dot:nth-child(6) {
+	animation-delay: 1s;
+	background-color: #b2165b;
+}
+
+.dot:nth-child(7) {
+	animation-delay: 1.2s;
+	background-color: #b2165b;
+}
+
+.dot:nth-child(8) {
+	animation-delay: 1.4s;
+	background-color: #b2165b;
+}
+
+#p-loading__container {
+	align-items: center;
+	background-color: #f4f9f9; /* 画像の背景色に合わせて調整 */
+	color: #f875aa; /* タイトルの色に合わせて調整 */
+	display: flex;
+	flex-direction: column;
+	font-family: "Montserrat", sans-serif;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+@keyframes pulse {
+
+0%,80%,100% {
+	transform: scale(0);
+}
+
+40% {
+	transform: scale(1);
+}
+
+}
+

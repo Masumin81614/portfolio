@@ -1,0 +1,12 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as mixin;
+
+.main__content {
+  background: global.$bg-color;
+
+  @include mixin.mq(pc) {
+    max-width: 1920px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,34 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as mixin;
+
+//ドロワーメニュー
+.p-drawer {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  background: global.$main-color;
+  overflow-y: scroll;
+  translate: 101%;
+  transition: translate 0.5s ease;
+
+  &.js-show {
+    translate: 0;
+  }
+}
+.p-drawer__body {
+  width: 100%;
+  height: fit-content;
+  padding-top: 86px;
+}
+
+.p-drawer__lists {
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 80px;
+}

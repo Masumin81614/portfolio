@@ -1,0 +1,7 @@
+@use "../global/variables" as global;
+@use "../global/mixin" as mixin;
+
+.p-header__nav {
+  //spの場合非表示
+  display: none;
+}
