@@ -1,0 +1,12 @@
+# Macが自動生成するファイル
+.DS_Store
+
+# Gulpの設定ファイル (個別に管理したい場合)
+gulpfile.js
+
+# npmでインストールされるライブラリのフォルダ
+node_modules/
+
+# ビルド結果など、生成されるファイルが入るフォルダ
+public/
+dist/
